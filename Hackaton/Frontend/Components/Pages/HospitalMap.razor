@@ -1,0 +1,38 @@
+﻿@page "/mapa"
+
+<h3>Mapa szpitala</h3>
+
+<div class="map-container">
+    <img src="images/hospital-map.png" alt="Plan szpitala" class="map-image" />
+    <svg class="route-overlay">
+        <!-- Przykładowa trasa -->
+        @* <line x1="60" y1="300" x2="60" y2="150" stroke="red" stroke-width="4" /> *@
+    </svg>
+</div>
+
+@code {
+    // Możesz tu dodać logikę np. do dynamicznych tras w przyszłości
+}
+
+<style>
+    .map-container {
+        position: relative;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .map-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .route-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+</style>
