@@ -1,4 +1,4 @@
-﻿namespace Frontend
+﻿namespace Core
 {
     public partial class App : Application
     {
